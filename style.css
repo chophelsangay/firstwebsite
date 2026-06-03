@@ -80,6 +80,7 @@
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   margin: 20px auto;
   font-family: Arial, sans-serif;
+  border-radius: 20px;
 }
 
 .card-img-top {
