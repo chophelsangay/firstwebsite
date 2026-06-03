@@ -71,5 +71,43 @@
   opacity: 1;
 }
 
+/* Card styling */
+.card {
+  width: 18rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Footer styling */
+footer {
+  background: blue;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
 
 
