@@ -26,6 +26,50 @@
   border: none;
 }
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+/* Carousel container */
+#carouselExampleFade {
+  max-width: 900px;       /* Limit width */
+  margin: 40px auto;      /* Center with spacing */
+  border-radius: 12px;    /* Rounded corners */
+  overflow: hidden;       /* Hide overflow for rounded edges */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* Soft shadow */
 }
+
+/* Carousel images */
+#carouselExampleFade .carousel-item img {
+  object-fit: cover;      /* Ensure images fill nicely */
+  height: 500px;          /* Fixed height for consistency */
+  width: 100%;            /* Full width */
+  transition: transform 1.2s ease-in-out; /* Smooth zoom effect */
+}
+
+/* Zoom effect on active slide */
+#carouselExampleFade .carousel-item.active img {
+  transform: scale(1.05); /* Slight zoom */
+}
+
+/* Navigation buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark semi-transparent */
+  border-radius: 50%;                   /* Circular buttons */
+  padding: 12px;
+}
+
+/* Hide default text */
+.carousel-control-prev .visually-hidden,
+.carousel-control-next .visually-hidden {
+  display: none;
+}
+
+/* Optional: fade effect for smoother transitions */
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+
+
+
